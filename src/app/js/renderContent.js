@@ -4,6 +4,7 @@
 		
 		for (var i = 0; i < res.items.length; i++) {
 			var product = document.createElement("li");
+			$(product).addClass('list-group-item');
 
 			var name = document.createElement("h3");
 			$(name).html(res.items[i].fields.name);

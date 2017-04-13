@@ -1,0 +1,25 @@
+body {
+	background-color: $main_yellow;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+// commmon
+.opacity-low {
+	opacity: $opacity_low;
+}
+.opacity-yellow {
+	background-color: $main_yellow;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+}
+
+.background-img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}

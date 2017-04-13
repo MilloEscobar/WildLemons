@@ -1,0 +1,36 @@
+/**
+ *  Do not remove the comment below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+/**
+ *  Do not remove the comment below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+.header .background-img {
+  background-image: url(./media/WildLemons-header.jpg);
+  height: 400px; }
+
+body {
+  background-color: #FFC300; }
+
+.container-fluid {
+  padding: 0; }
+
+.opacity-low {
+  opacity: 0.4; }
+
+.opacity-yellow {
+  background-color: #FFC300;
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+.background-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+body {
+  background-color: #FFC300; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3N0ZGluIiwic2Fzcy9jb21wb25lbnRzL19oZWFkZXIuc2NzcyIsInNhc3MvcGFydGlhbHMvX2Jhc2Uuc2NzcyIsInNhc3MvX3ZhcmlhYmxlcy5zY3NzIiwic2Fzcy9wYXJ0aWFscy9fbGF5b3V0LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7OztHQUdHO0FBT0g7OztHQUdHO0FDYkg7RUFHRSxxREFBb0Q7RUFDcEQsY0FBYyxFQUNkOztBQ0xGO0VBQ0MsMEJDQ21CLEVEQW5COztBQUVEO0VBQ0MsV0FBVyxFQUNYOztBQUdEO0VBQ0MsYUNGZSxFREdmOztBQUNEO0VBQ0MsMEJDWG1CO0VEWW5CLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osYUFBYSxFQUViOztBQUVEO0VBQ0MsdUJBQXVCO0VBQ3ZCLDRCQUE0QjtFQUM1Qiw2QkFBNkIsRUFDN0I7O0FFeEJEO0VBQ0MsMEJEQ21CLEVDQW5CIiwiZmlsZSI6ImluZGV4LmNzcyIsInNvdXJjZXNDb250ZW50IjpbbnVsbCwiLmhlYWRlciB7XHJcblxyXG5cdC5iYWNrZ3JvdW5kLWltZyB7XHJcblx0XHRiYWNrZ3JvdW5kLWltYWdlOiB1cmwoLi9tZWRpYS9XaWxkTGVtb25zLWhlYWRlci5qcGcpO1xyXG5cdFx0aGVpZ2h0OiA0MDBweDtcclxuXHR9XHJcbn1cclxuIiwiYm9keSB7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogJG1haW5feWVsbG93O1xyXG59XHJcblxyXG4uY29udGFpbmVyLWZsdWlkIHtcclxuXHRwYWRkaW5nOiAwO1xyXG59XHJcblxyXG4vLyBjb21tbW9uXHJcbi5vcGFjaXR5LWxvdyB7XHJcblx0b3BhY2l0eTogJG9wYWNpdHlfbG93O1xyXG59XHJcbi5vcGFjaXR5LXllbGxvdyB7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogJG1haW5feWVsbG93O1xyXG5cdHBvc2l0aW9uOiBhYnNvbHV0ZTtcclxuXHR3aWR0aDogMTAwJTtcclxuXHRoZWlnaHQ6IDEwMCU7XHJcblxyXG59XHJcblxyXG4uYmFja2dyb3VuZC1pbWcge1xyXG5cdGJhY2tncm91bmQtc2l6ZTogY292ZXI7XHJcblx0YmFja2dyb3VuZC1wb3NpdGlvbjogY2VudGVyO1xyXG5cdGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XHJcbn0iLCIvL2NvbG9yZXMgZGUgZm9uZG9cclxuXHJcbiRtYWluX3llbGxvdzojRkZDMzAwO1xyXG4kbmF2X2NvbG9yOiAjRjlGQ0Y1O1xyXG4kbmF2X2NvbG9yX21vdmlsOiNFOEU4RTg7XHJcblxyXG5cclxuXHJcbiRvcGFjaXR5X2xvdzowLjQ7IiwiYm9keSB7XHJcblx0YmFja2dyb3VuZC1jb2xvcjogJG1haW4teWVsbG93O1xyXG59Il0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9 */
