@@ -2,6 +2,33 @@
 
 	.background-img {
 		background-image: url(./media/WildLemons-header.jpg);
-		height: 400px;
+		height: 65rem;
+	}
+
+	.nav-wrapper {
+		background-color: $main_gray;
+	}
+	
+	.nav {
+		float: right;
+	}
+	.nav-pills>li>a {
+		border-radius: 0;
+		color: $dark_gray;
+		font-size: 1.3rem;
+		margin: 20px 10px;
+		padding: 5px 2px;
+		&:hover {
+			background-color: transparent;
+			color: $main_yellow;
+		}
+	}
+
+	.nav-pills>li.active>a,
+	.nav-pills>li.active>a:focus,
+	.nav-pills>li.active>a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid $main_yellow;
+    color: $main_yellow;
 	}
 }
