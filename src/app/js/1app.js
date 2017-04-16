@@ -12,7 +12,8 @@ var app = function (window) {
 	FORM_NAME = $('#formName').val(),
 	FORM_GOTCHA = $('#gotcha').val(),
 	FORM_MESSAGE = $('#formMessage').val(),
-	FORM_EMAIL = $('#formEmail').val();
+	FORM_EMAIL = $('#formEmail').val(),
+	NAV_LINKS= $('#navbar-scroll .go-to');
 
 
 	/************* 
@@ -23,7 +24,23 @@ var app = function (window) {
 		e.preventDefault();
   		app.form();
 	});
-	console.log('******loading--******');
+
+	function goToByScroll(id){
+      // Scroll
+      console.log(id);
+    $('html,body').animate({
+        scrollTop: ($(id).offset().top - 200)},
+        'slow');
+	}
+
+	NAV_LINKS.click(function(e) { 
+	      // Prevent a page reload when a link is pressed
+	    e.preventDefault(); 
+	      // Call the scroll function
+	    goToByScroll($(this).attr('href'));           
+	});
+
+	console.log('******loading******');
 	return {
 		ACCESS_TOKEN : ACCESS_TOKEN,
 		SPACE_ID : SPACE_ID,

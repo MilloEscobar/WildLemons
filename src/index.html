@@ -23,32 +23,67 @@
 <!-- endinject -->
 <!-- endbuild -->
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-scroll">
 <!--[if lt IE 10]>
   <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-<header class="container-fluid header">
+<header id="home" class="container-fluid header">
   <div class="container-fluid nav-wrapper">
-    <div class="container main-nav">
-      <ul class="nav nav-pills">
-          <li role="presentation" class="active"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">Profile</a></li>
-          <li role="presentation"><a href="#">Messages</a></li>
-          <li role="presentation"><a href="#">Home</a></li>
-          <li role="presentation"><a href="#">Profile</a></li>
-          <li role="presentation"><a href="#">Messages</a></li>
-      </ul>
-    </div>
-  </div>
+    <nav id="navbar-scroll" class="navbar navbar-default container main-nav">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_menu" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand go-to" href="#home">
+          <img class="nav-logo-img go-to" src="/app/media/nav-logo-1.png" alt=""><h1 class="nav-logo-name">WildLemons</h1></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="nav_menu">
+        <ul class="nav navbar-nav">
+          <li role="presentation"><a class="go-to" href="#home">Home <span class="sr-only">(current)</span></a></li>
+          <li role="presentation"><a class="go-to" href="#services">Services</a></li>
+          <li role="presentation"><a class="go-to" href="#about">About</a></li>
+          <li role="presentation"><a class="go-to" href="#work">Work</a></li>
+          <li role="presentation"><a class="go-to" href="#prices">Prices</a></li>
+          <li role="presentation"><a class="go-to" href="#contact">Contact</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </nav>
+  </div><!-- /.container-fluid -->
+  
   <div class="container-fluid background-img">
   <div class="container section"></div>
   <!-- <img src="app/media/WildLemons-header.jpg" alt=""> -->
     <div class="opacity-low opacity-yellow"></div>
   </div>
 </header>
-<section class="container-fluid section">
+
+<section class="container-fluid  yellow">
+  <div id="services" class="container section">
+  </div>
+</section>
+<section class="container-fluid  light">
+  <div id="about" class="container section">
+  </div>
+</section>
+<section class="container-fluid yellow">
+  <div id="work" class="container section">
+  </div>
+</section>
+<section class="container-fluid dark section-before-rotate">
+  <div id="prices" class="container section">
+  </div>
+  <div class="fixed-background"></div>
+</section>
+
+<section id="contact" class="container-fluid  section-rotate">
   <div class="rotate-bacground-right light"></div>
-  <div class="container section-rotate">
+  <div  class="container section">
     <h2>Contact</h2>
     <form onsubmit="return false">
       <div class="form-group">
@@ -73,25 +108,21 @@
     </form>
   </div>
 </section>
-<section class="container-fluid section yellow">
-</section>
-<section class="container-fluid section light">
-</section>
-<section class="container-fluid section yellow">
-</section>
-<section class="container-fluid section light">
-  <div class="container">
+<section class="container-fluid section-after-rotate yellow">
+  <div class="container section">
     <ul class="list-group" id="materials"></ul>
+    <div class="fixed-background"></div>
   </div> 
 </section>
 
 <footer class="container-fluid dark">
-  <div class="container section">
+  <div class="container section footer">
     
   </div>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="app.min.js"></script>
 
 </body>

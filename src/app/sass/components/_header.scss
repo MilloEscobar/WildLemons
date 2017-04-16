@@ -1,34 +1,101 @@
-.header {
+.container-fluid {
+	&.header {
+		padding-top: 7rem;
 
-	.background-img {
-		background-image: url(./media/WildLemons-header.jpg);
-		height: 65rem;
-	}
-
-	.nav-wrapper {
-		background-color: $main_gray;
-	}
-	
-	.nav {
-		float: right;
-	}
-	.nav-pills>li>a {
-		border-radius: 0;
-		color: $dark_gray;
-		font-size: 1.3rem;
-		margin: 20px 10px;
-		padding: 5px 2px;
-		&:hover {
-			background-color: transparent;
-			color: $main_yellow;
+		.background-img {
+			background-image: url(./media/WildLemons-header.jpg);
+			height: 65rem;
 		}
+
+		.nav-wrapper {
+			background-color: $main_gray;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 20;
+		}
+		
+		.navbar,
+		.navbar-header {
+			margin: 0 auto;
+			min-height: 7rem;
+		}
+		
+		.navbar-default {
+			border: none;
+			background-color: transparent;
+		}
+		
+		.navbar-brand {
+			float: left;
+			height: 3rem;
+			margin: 2rem 0;
+			padding: 0 2px;
+		}
+
+		.navbar-nav {
+	    margin: 0;
 	}
 
-	.nav-pills>li.active>a,
-	.nav-pills>li.active>a:focus,
-	.nav-pills>li.active>a:hover {
-    background-color: transparent;
-    border-bottom: 2px solid $main_yellow;
-    color: $main_yellow;
+		.navbar-toggle {
+			position: relative;
+			height: 3rem;
+			float: right;
+			padding: 9px 10px;
+			padding-right: 0;
+			margin-right: 0px;
+			margin-bottom: 8px;
+			margin-top: 2rem;
+			background-color: transparent;
+			background-image: none;
+			border: none;
+			border-radius: 0;
+		}
+
+		.navbar-collapse {
+			padding: 0;
+		}
+
+		.nav-logo-img {
+			float: left;
+			margin-right: 1rem;
+			max-height: 100%;
+			width: inherit;
+		}
+		
+		.nav-logo-name {
+			display: inline-block;
+			font-size: 1.5rem;
+			line-height: 3rem;
+			margin: 0;
+		}
+
+		.nav {
+			@media (min-width: $sm-width) {
+			float: right;
+	    }		
+		}
+
+		.navbar-nav>li>a {
+			border-radius: 0;
+			color: $dark_gray;
+			font-size: 1.3rem;
+			height: 3rem;
+			margin: 20px 10px;
+			padding: 5px 2px;
+			&:hover {
+				background-color: transparent;
+				color: $main_yellow;
+			}
+		}
+
+		.navbar-nav>li.active>a,
+		.navbar-nav>li.active>a:focus,
+		.navbar-nav>li.active>a:hover {
+	    background-color: transparent;
+	    border-bottom: 2px solid $main_yellow;
+	    color: $main_yellow;
+		}
 	}
 }
