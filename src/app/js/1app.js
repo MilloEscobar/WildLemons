@@ -29,7 +29,7 @@ var app = function (window) {
       // Scroll
       console.log(id);
     $('html,body').animate({
-        scrollTop: ($(id).offset().top - 200)},
+        scrollTop: ($(id).offset().top)},
         'slow');
 	}
 

@@ -59,7 +59,7 @@
   <div class="container-fluid background-img">
   <div class="container section"></div>
   <!-- <img src="app/media/WildLemons-header.jpg" alt=""> -->
-    <div class="opacity-low opacity-yellow"></div>
+    <div class="opacity-low opacity-dark"></div>
   </div>
 </header>
 
@@ -75,8 +75,30 @@
   <div id="work" class="container section">
   </div>
 </section>
-<section class="container-fluid dark section-before-rotate">
-  <div id="prices" class="container section">
+<section id="prices" class="container-fluid dark section-before-rotate">
+   <div  class="container section">
+    <h2>Contact</h2>
+    <form onsubmit="return false">
+      <div class="form-group">
+        <label for="formName">Name</label>
+        <input class="form-control" id="formName" type="text" name="name" placeholder="Name" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Email address</label>
+        <input class="form-control" id="formEmail" type="email" name="_replyto" placeholder="Email" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputFile">Message</label>
+        <textarea class="form-control" id="formMessage" name="message" placeholder="Message" required></textarea>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Check me out
+        </label>
+      </div>
+      <input id="gotcha" type="text" name="_gotcha" style="display:none"/>
+      <button id="sendEmail type="submit" class="btn btn-default">Submit</button>
+    </form>
   </div>
   <div class="fixed-background"></div>
 </section>
@@ -111,8 +133,8 @@
 <section class="container-fluid section-after-rotate yellow">
   <div class="container section">
     <ul class="list-group" id="materials"></ul>
-    <div class="fixed-background"></div>
   </div> 
+  <div class="fixed-background"></div>
 </section>
 
 <footer class="container-fluid dark">
