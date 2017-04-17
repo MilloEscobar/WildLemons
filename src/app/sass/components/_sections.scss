@@ -9,6 +9,7 @@ position: relative;
 
 	&.light {
 		background-color: $main_gray;
+		color: $dark_gray;
 	}
 
 	&.yellow {
@@ -17,6 +18,7 @@ position: relative;
 
 	&.dark {
 		background-color: $dark_gray;
+		color: $main_gray;
 	}
 }
 
