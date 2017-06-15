@@ -27,7 +27,6 @@ var app = function (window) {
 
 	function goToByScroll(id){
       // Scroll
-      console.log(id);
     $('html,body').animate({
         scrollTop: ($(id).offset().top)},
         'slow');
@@ -36,6 +35,7 @@ var app = function (window) {
 	NAV_LINKS.click(function(e) { 
 	      // Prevent a page reload when a link is pressed
 	    e.preventDefault(); 
+	    $( "#navbar-icon" ).trigger( "click" );
 	      // Call the scroll function
 	    goToByScroll($(this).attr('href'));           
 	});
