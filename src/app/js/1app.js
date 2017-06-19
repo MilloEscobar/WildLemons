@@ -13,21 +13,33 @@ var app = function (window) {
 	FORM_GOTCHA = $('#gotcha').val(),
 	FORM_MESSAGE = $('#formMessage').val(),
 	FORM_EMAIL = $('#formEmail').val(),
+	HEADER_SECTION = $(".header-space")
 	NAV_LINKS= $('#navbar-scroll .go-to');
 
 
 	/************* 
 	APP EVENTS ACTIONS 
 	**************/
+
+	/*
+	* smooth scrolling
+	*/
 	jQuery.scrollSpeed(80, 1000);
 
+
+	/*
+	* smooth scrolling
+	*/
 	FORM_BUTTON.on( "click", function(e) {
 		e.preventDefault();
   		app.form();
 	});
 
+
+	/*
+	* go to section srolling
+	*/
 	function goToByScroll(id){
-      // Scroll
     $('html,body').animate({
         scrollTop: ($(id).offset().top)},
         'slow');
@@ -39,6 +51,25 @@ var app = function (window) {
 	    $( "#navbar-icon" ).trigger( "click" );
 	      // Call the scroll function
 	    goToByScroll($(this).attr('href'));           
+	});
+
+	/*
+	* Change nav-bar background
+	*/
+
+	var a = HEADER_SECTION.offset().top + $(".header-space").height() - 70 ;
+
+	$(document).on('scroll', function(){
+		console.log(a , $(this).scrollTop())
+
+		if($(this).scrollTop() > a) {   
+			$('.nav-wrapper').removeClass("transparent");
+			console.log('color');
+		   
+		} else {
+	   		$('.nav-wrapper').addClass("transparent");
+	   		console.log('transparent');
+		}
 	});
 
 	console.log('******loading******');

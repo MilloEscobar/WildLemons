@@ -13,12 +13,18 @@
 		}
 
 		.nav-wrapper {
-			background-color: $transparent;
+			background-color: $dark_gray;
 			position: fixed;
 			top: 0;
 			left: 0;
 			width: 100%;
 			z-index: 20;
+		}
+
+		.transparent {
+			background-color: $transparent;
+			-webkit-transition: 2s; /* Safari */
+    		transition: 2s;
 		}
 		
 		.navbar,
