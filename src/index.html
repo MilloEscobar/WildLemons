@@ -7,6 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="shortcut icon" type="image/png" href="/app/media/nav-logo-1.png">
+<link href="https://fonts.googleapis.com/css?family=Amatica+SC:400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -49,7 +50,7 @@
           <li role="presentation"><a class="go-to" href="#home">Home <span class="sr-only">(current)</span></a></li>
           <li role="presentation"><a class="go-to" href="#services">Services</a></li>
           <li role="presentation"><a class="go-to" href="#about">About</a></li>
-          <li role="presentation"><a class="go-to" href="#work">Work</a></li>
+          <!-- <li role="presentation"><a class="go-to" href="#work">Work</a></li> -->
           <li role="presentation"><a class="go-to" href="#prices">Prices</a></li>
           <li role="presentation"><a class="go-to" href="#contact">Contact</a></li>
         </ul>
@@ -58,25 +59,42 @@
   </div><!-- /.container-fluid -->
   
   <div class="container-fluid background-img">
-  <div class="container section"></div>
-  <!-- <img src="app/media/WildLemons-header.jpg" alt=""> -->
-    <div class="opacity-low opacity-dark"></div>
-  </div>
+    <div class="container section"></div>
+    <!-- <img src="app/media/WildLemons-header.jpg" alt=""> -->
+      <div class="opacity-medium opacity-dark"></div>
+      <div class="header-text">
+        <h2 class="uppercase">When life gives you lemons</h2>
+        <h2 class="uppercase">squeeze them in peoples eyes</h2>
+      </div>
+    </div>
 </header>
 
-<section class="container-fluid  yellow">
-  <div id="services" class="container section">
-  </div>
-</section>
 <section class="container-fluid  light">
-  <div id="about" class="container section">
+  <div id="services" class="container section">
+    <h2>Our Services</h2>
   </div>
 </section>
-<section class="container-fluid yellow">
+
+<section id="about" class="container-fluid dark section-before-rotate">
+   <div  class="container section">
+    <h2>About</h2>
+  </div>
+  <div class="fixed-background"></div>
+</section>
+
+<!-- <section class="container-fluid yellow">
   <div id="work" class="container section">
   </div>
+</section> -->
+
+<section id="prices" class="container-fluid  section-rotate">
+  <div class="rotate-bacground-right light"></div>
+    <div  class="container section">
+     <h2>Our Members</h2>
+    </div>
 </section>
-<section id="prices" class="container-fluid dark section-before-rotate">
+
+<section id="contact" class="container-fluid dark section-after-rotate">
    <div  class="container section">
     <h2>Contact</h2>
     <form onsubmit="return false">
@@ -101,40 +119,6 @@
       <button id="sendEmail type="submit" class="btn btn-default">Submit</button>
     </form>
   </div>
-  <div class="fixed-background"></div>
-</section>
-
-<section id="contact" class="container-fluid  section-rotate">
-  <div class="rotate-bacground-right light"></div>
-  <div  class="container section">
-    <h2>Contact</h2>
-    <form onsubmit="return false">
-      <div class="form-group">
-        <label for="formName">Name</label>
-        <input class="form-control" id="formName" type="text" name="name" placeholder="Name" required>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Email address</label>
-        <input class="form-control" id="formEmail" type="email" name="_replyto" placeholder="Email" required>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputFile">Message</label>
-        <textarea class="form-control" id="formMessage" name="message" placeholder="Message" required></textarea>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Check me out
-        </label>
-      </div>
-      <input id="gotcha" type="text" name="_gotcha" style="display:none"/>
-      <button id="sendEmail type="submit" class="btn btn-default">Submit</button>
-    </form>
-  </div>
-</section>
-<section class="container-fluid section-after-rotate yellow">
-  <div class="container section">
-    <ul class="list-group" id="materials"></ul>
-  </div> 
   <div class="fixed-background"></div>
 </section>
 
