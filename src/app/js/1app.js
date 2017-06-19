@@ -19,6 +19,7 @@ var app = function (window) {
 	/************* 
 	APP EVENTS ACTIONS 
 	**************/
+	jQuery.scrollSpeed(80, 1000);
 
 	FORM_BUTTON.on( "click", function(e) {
 		e.preventDefault();
