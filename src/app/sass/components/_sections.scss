@@ -45,9 +45,10 @@ position: relative;
 		min-height: 20rem;
 	}
 
-	.title {
+	>.title {
 		font-family: 'Amatica SC', cursive;
 		text-align: center;
+		margin-bottom: 6rem;
 	}
 
   	.text-yellow {
@@ -77,11 +78,7 @@ position: relative;
 	}
 	.section {
 
-		margin-bottom: 10rem;
-
-		@media (min-width: $md-width) {
-		    margin-bottom: 15rem;
-	  	}
+		margin-bottom: 8rem;
 		
 	}
 }
@@ -96,18 +93,15 @@ position: relative;
 	}
 	.section {
 
-		margin-top: 10rem;
-		@media (min-width: $md-width) {
-		    margin-top: 15rem;
-	  	}
+		margin-top: 3rem;
 	}
 }
 
 .rotate-bacground-right,
 .rotate-bacground-left {
-	height: 140%;
+	height: 110%;
 	position: absolute;
-	top: -20%;
+	top: -5%;
 	width: 200%;
 	z-index: 2;
 }
@@ -184,4 +178,18 @@ position: relative;
 .header-space {
 	height: 100vh;
 	position: relative;
+}
+
+.inline-list {
+	padding: 0;
+
+	li {
+		display: inline-block;
+
+		.title {
+			text-align: center;
+			font-size: 1.6rem;
+			font-weight: 100;
+		}
+	}
 }
