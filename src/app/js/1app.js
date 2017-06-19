@@ -13,7 +13,8 @@ var app = function (window) {
 	FORM_GOTCHA = $('#gotcha').val(),
 	FORM_MESSAGE = $('#formMessage').val(),
 	FORM_EMAIL = $('#formEmail').val(),
-	HEADER_SECTION = $(".header-space")
+	HEADER_SECTION = $(".header-space"),
+	a = HEADER_SECTION.offset().top + $(".header-space").height() - 70 ,
 	NAV_LINKS= $('#navbar-scroll .go-to');
 
 
@@ -57,18 +58,17 @@ var app = function (window) {
 	* Change nav-bar background
 	*/
 
-	var a = HEADER_SECTION.offset().top + $(".header-space").height() - 70 ;
+	$(window).on('resize', function () {
+		a = HEADER_SECTION.offset().top + $(".header-space").height() - 70 ;
+		console.log(a);
+	});
 
 	$(document).on('scroll', function(){
-		console.log(a , $(this).scrollTop())
 
 		if($(this).scrollTop() > a) {   
 			$('.nav-wrapper').removeClass("transparent");
-			console.log('color');
-		   
 		} else {
 	   		$('.nav-wrapper').addClass("transparent");
-	   		console.log('transparent');
 		}
 	});
 

@@ -4,7 +4,7 @@ position: relative;
 
 .container-fluid ,
 .rotate-bacground-right,
-.rotate-bacground-left{
+.rotate-bacground-left {
 	padding: 0;
 
 	&.light {
@@ -49,6 +49,10 @@ position: relative;
 		font-family: 'Amatica SC', cursive;
 		text-align: center;
 	}
+
+  	.text-yellow {
+  		color: $main_yellow;
+  	}
 }
 
 .section-rotate {
