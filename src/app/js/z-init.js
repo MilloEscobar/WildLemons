@@ -1,3 +1,6 @@
 (function (window) {
-	app.getMaterials();
+	app.getAbout();
+	app.getMembers();
+	app.getServices();
+	app.getWorks();
 }(window));

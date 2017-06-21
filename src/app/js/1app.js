@@ -3,10 +3,12 @@ var app = function (window) {
 	APP CONSTANTS
 	**************/
 
-	var ACCESS_TOKEN = '83e035756d8888fb43bda186bc4e73ab68e0b05ef053c633fa3dd0c0064ec7fc',
-	SPACE_ID = 'stswelzpijg5',
-	MATERIALS_ID = 'materiales',
-	SERVICES_ID='',
+	var ACCESS_TOKEN = '31dbd1f65af6d8809fe96da31d38db04180043a06854cc19b39431317cd4d3b5',
+	SPACE_ID = 'o2re92u0b14d',
+	MEMBERS_ID = 'members',
+	SERVICES_ID='services',
+	ABOUT_ID='about',
+	WORKS_ID='works',
 	MATERIALS_LIST = $('#materials'),
 	FORM_BUTTON = $('#sendEmail'),
 	FORM_NAME = $('#formName').val(),
@@ -14,7 +16,9 @@ var app = function (window) {
 	FORM_MESSAGE = $('#formMessage').val(),
 	FORM_EMAIL = $('#formEmail').val(),
 	HEADER_SECTION = $(".header-space"),
-	a = HEADER_SECTION.offset().top + $(".header-space").height() - 70 ,
+	SPANISH = false;
+	LENGUAGE_BTN = $('.lenguage-btn');
+	a = HEADER_SECTION.offset().top + $(".header-space").height() - 70,
 	NAV_LINKS= $('#navbar-scroll .go-to');
 
 
@@ -26,7 +30,6 @@ var app = function (window) {
 	* smooth scrolling
 	*/
 	jQuery.scrollSpeed(80, 1000);
-
 
 	/*
 	* smooth scrolling
@@ -60,7 +63,6 @@ var app = function (window) {
 
 	$(window).on('resize', function () {
 		a = HEADER_SECTION.offset().top + $(".header-space").height() - 70 ;
-		console.log(a);
 	});
 
 	$(document).on('scroll', function(){
@@ -72,16 +74,40 @@ var app = function (window) {
 		}
 	});
 
+	/*
+	*LENGUAGE CHANGER
+	*/
+
+	LENGUAGE_BTN.on('click', function (e) {
+		e.preventDefault();
+		if (this.value === 'true') {
+			app.SPANISH = true;
+		} else {
+			app.SPANISH = false;
+		}
+		changeLenguage()
+	});
+
+	function changeLenguage() {
+		app.getAbout(app.ABOUT, true);
+		app.getMembers(app.MEMBERS, true);
+		app.getServices(app.SERVICES, true);
+		app.getWorks(app.WORKS, true);
+	}
+
 	console.log('******loading******');
 	return {
 		ACCESS_TOKEN : ACCESS_TOKEN,
 		SPACE_ID : SPACE_ID,
-		MATERIALS_ID : MATERIALS_ID,
+		MEMBERS_ID : MEMBERS_ID,
 		SERVICES_ID : SERVICES_ID,
+		ABOUT_ID : ABOUT_ID,
+		WORKS_ID : WORKS_ID,
 		MATERIALS_LIST : MATERIALS_LIST,
 		FORM_NAME : FORM_NAME,
 		FORM_GOTCHA : FORM_GOTCHA,
 		FORM_MESSAGE : FORM_MESSAGE,
+		SPANISH : SPANISH,
 		FORM_EMAIL : FORM_EMAIL,
 	}
 	

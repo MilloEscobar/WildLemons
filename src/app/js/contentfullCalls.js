@@ -1,12 +1,26 @@
 
 (function (window) {
-	app.getMaterials = function () {
-		var url = 'https://cdn.contentful.com/spaces/'+app.SPACE_ID+'/entries?access_token='+app.ACCESS_TOKEN+'&content_type='+app.MATERIALS_ID;
+	app.getAbout = function () {
+		var url = 'https://cdn.contentful.com/spaces/'+app.SPACE_ID+'/entries?access_token='+app.ACCESS_TOKEN+'&content_type='+app.ABOUT_ID;
 		object = {
 					url : url,
 					method : "GET",
-					callback : app.renderMaterials,
-                    errorCallback : app.errorMaterials,
+					callback : app.renderAbout,
+                    errorCallback : app.renderAbout,
+                    dataType : 'json',
+                    headers: {}
+				}
+
+		app.ajax(object);
+	}
+
+	app.getMembers = function () {
+		var url = 'https://cdn.contentful.com/spaces/'+app.SPACE_ID+'/entries?access_token='+app.ACCESS_TOKEN+'&content_type='+app.MEMBERS_ID;
+		object = {
+					url : url,
+					method : "GET",
+					callback : app.renderMembers,
+                    errorCallback : app.renderMembers,
                     dataType : 'json',
                     headers: {}
 				}
@@ -15,13 +29,26 @@
 	}
 
 	app.getServices = function () {
-		var url = 'https://cdn.contentful.com/spaces/'+app.SPACE_ID+'/content_types/'+app.SERVICES_ID+'?access_token='+app.ACCESS_TOKEN
-		console.log('getServices');
+		var url = 'https://cdn.contentful.com/spaces/'+app.SPACE_ID+'/entries?access_token='+app.ACCESS_TOKEN+'&content_type='+app.SERVICES_ID;
 		object = {
-					url : "/spaces/{space_id}/content_types/{content_type_id}?access_token={access_token}",
+					url : url,
 					method : "GET",
-					callback : app.renderMaterials,
-                    errorCallback : app.errorMaterials,
+					callback : app.renderServices,
+                    errorCallback : app.renderServices,
+                    dataType : 'json',
+                    headers: {}
+				}
+
+		app.ajax(object);
+	}
+
+	app.getWorks = function () {
+		var url = 'https://cdn.contentful.com/spaces/'+app.SPACE_ID+'/entries?access_token='+app.ACCESS_TOKEN+'&content_type='+app.WORKS_ID;
+		object = {
+					url : url,
+					method : "GET",
+					callback : app.renderWorks,
+                    errorCallback : app.renderWorks,
                     dataType : 'json',
                     headers: {}
 				}

@@ -125,4 +125,14 @@
 		    }		
 		}
 	}
+	
+}
+
+.btn {
+	&.lenguage-btn {
+		background-color: $transparent;
+		&:hover {
+			color: $main_yellow;
+		}
+	}
 }
