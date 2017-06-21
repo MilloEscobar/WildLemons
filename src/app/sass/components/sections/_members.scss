@@ -1,5 +1,18 @@
 .members {
 
+	li {
+
+		margin-bottom: 8rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		@media (min-width: $lg-width) {
+			margin-bottom: 0;
+		}
+		
+	}
+
 	img {
 		display: block;
 		margin: 0 auto;
@@ -10,5 +23,6 @@
 	}
 	p {
 		text-align: center;
+		
 	}
 }
