@@ -11,20 +11,43 @@
 }
 
 .images-section {
+	height: 25rem;
+
+	@media (min-width: $xs-width) {
+		height: 30rem;
+	}
+
+	@media (min-width: $sm-width) {
+		height: 35rem;
+	}
+	.section {
+		padding: 0;
+		min-height: 0;
+	}
+
 	ul {
-		margin-left: 24%;
+		width: 52%;
+	    margin-left: 24%;
+	    height: 140%;
+	    position: absolute;
+	    top: -18%;
 	}
 	
 	li {
 		float: left;
 		position: relative;
-		max-width: 17%;
+		overflow: hidden;
+		width: 25%;
+		height: 100%;
 		transform: rotate(-10deg);
 		-ms-transform: rotate(-10deg); /* IE 9 */
 		-webkit-transform: rotate(-10deg);
 
 		img {
-			width: 100%;
+			position: absolute;
+			left: -50%;
+			height: 100%;
+			width: initial;
 		}
 	}
 }
