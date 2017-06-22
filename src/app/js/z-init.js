@@ -1,6 +1,6 @@
 (function (window) {
+	app.getServices();
 	app.getAbout();
 	app.getMembers();
-	app.getServices();
 	app.getWorks();
 }(window));

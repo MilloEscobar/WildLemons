@@ -33,26 +33,62 @@
 		// }
 	}
 
-	app.renderMembers = function (res, rerender) {
+	app.renderMembers = function (res) {
 		app.MEMBERS = res;
-		var li = $('#members .members').children()[1]
-		$(li).children('img').attr("src", "https:"+ res.includes.Asset[1].fields.file.url);
-		console.log(li);
-		console.log(res.includes,res.items[0].fields);
+		var ul = $('#members .members');
+		var content = '';
 		if (app.SPANISH) {
-			//console.log('spanish',res.items[0].fields);
+			for (var i = 0; i < app.MEMBERS.items.length; i++) {
+				var imgUrl = '';
+				for (var j = 0; j < app.MEMBERS.includes.Asset.length; j++) {
+					if (app.MEMBERS.includes.Asset[j].sys.id == app.MEMBERS.items[i].fields.image.sys.id) {
+						imgUrl = app.MEMBERS.includes.Asset[j].fields.file.url
+					}	
+				}
+				content = content + '<li class="col-xs-12 col-sm-6"><img src="'+imgUrl+'"><h4 class="title">'+app.MEMBERS.items[i].fields.name+'</h4><p>'+app.MEMBERS.items[i].fields.descriptionSpanish+'</p></li>';
+			}
+			ul.html(content);
 		} else {
-			console.log('english',res.items[0].fields);
+			for (var i = 0; i < app.MEMBERS.items.length; i++) {
+				var imgUrl = '';
+				for (var j = 0; j < app.MEMBERS.includes.Asset.length; j++) {
+					if (app.MEMBERS.includes.Asset[j].sys.id == app.MEMBERS.items[i].fields.image.sys.id) {
+						imgUrl = app.MEMBERS.includes.Asset[j].fields.file.url
+					}	
+				}
+				content = content + '<li class="col-xs-12 col-sm-6"><img src="'+imgUrl+'"><h4 class="title">'+app.MEMBERS.items[i].fields.name+'</h4><p>'+app.MEMBERS.items[i].fields.descriptionEnglish+'</p></li>';
+			}
+			ul.html(content);
 		}
 
 	}
-	app.renderServices = function (res, rerender) {
+	app.renderServices = function (res) {
 		app.SERVICES = res;
-		//console.log('renderServices',res);
+		
+		var ul = $('#services .services');
+		var content = '';
 		if (app.SPANISH) {
-			//console.log('spanish');
+			for (var i = 0; i < app.SERVICES.items.length; i++) {
+				var imgUrl = '';
+				for (var j = 0; j < app.SERVICES.includes.Asset.length; j++) {
+					if (app.SERVICES.includes.Asset[j].sys.id == app.SERVICES.items[i].fields.icon.sys.id) {
+						imgUrl = app.SERVICES.includes.Asset[j].fields.file.url
+					}	
+				}
+				content = content + '<li class="col-xs-12 col-sm-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.nameSpanish+'</h4><p>'+app.SERVICES.items[i].fields.descriptionSpanish+'</p></li>';
+			}
+			ul.html(content);
 		} else {
-			//console.log('english');
+			for (var i = 0; i < app.SERVICES.items.length; i++) {
+				var imgUrl = '';
+				for (var j = 0; j < app.SERVICES.includes.Asset.length; j++) {
+					if (app.SERVICES.includes.Asset[j].sys.id == app.SERVICES.items[i].fields.icon.sys.id) {
+						imgUrl = app.SERVICES.includes.Asset[j].fields.file.url
+					}	
+				}
+				content = content + '<li class="col-xs-12 col-sm-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.name+'</h4><p>'+app.SERVICES.items[i].fields.descriptionEnglish+'</p></li>';
+			}
+			ul.html(content);
 		}
 
 	}

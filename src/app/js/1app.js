@@ -89,10 +89,10 @@ var app = function (window) {
 	});
 
 	function changeLenguage() {
+		app.getServices(app.SERVICES);
 		app.getAbout(app.ABOUT, true);
-		app.getMembers(app.MEMBERS, true);
-		app.getServices(app.SERVICES, true);
-		app.getWorks(app.WORKS, true);
+		app.getMembers(app.MEMBERS);
+		app.getWorks(app.WORKS);
 	}
 
 	console.log('******loading******');

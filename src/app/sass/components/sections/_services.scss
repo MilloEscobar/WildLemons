@@ -18,10 +18,15 @@
 
 		.title {
 			margin-bottom: 2rem;
+			font-weight: bold;
 			@media (min-width: $lg-width) {
 				margin-bottom: 0;
-			}
+			}			
 		  
+		}
+
+		p {
+			text-align: center;
 		}
 	}
 }
