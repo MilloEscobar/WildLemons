@@ -16,9 +16,11 @@ var app = function (window) {
 	FORM_MESSAGE = $('#formMessage').val(),
 	FORM_EMAIL = $('#formEmail').val(),
 	HEADER_SECTION = $(".header-space"),
-	SPANISH = false;
-	LENGUAGE_BTN = $('.lenguage-btn');
+	SPANISH = false,
+	LENGUAGE_BTN = $('.lenguage-btn'),
 	a = HEADER_SECTION.offset().top + $(".header-space").height() - 70,
+	LENGUAGE_SELECTOR = $('.lenguage-selections'),
+	LENGUAGE_HIDDEN = $('.lenguage-hidden'),
 	NAV_LINKS= $('#navbar-scroll .go-to');
 
 
@@ -85,7 +87,10 @@ var app = function (window) {
 		} else {
 			app.SPANISH = false;
 		}
-		changeLenguage()
+
+		LENGUAGE_HIDDEN.removeClass('lenguage-hidden');
+		LENGUAGE_SELECTOR.addClass('lenguage-hidden');
+		changeLenguage();
 	});
 
 	function changeLenguage() {

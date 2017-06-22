@@ -33,8 +33,8 @@
   <div class="container-fluid nav-wrapper transparent">
     <nav id="navbar-scroll" class="navbar navbar-default container main-nav">
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button id="navbar-icon" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_menu" aria-expanded="false">
+      <div class="navbar-header ">
+        <button id="navbar-icon" type="button" class="lenguage-hidden navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_menu" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -45,8 +45,8 @@
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="nav_menu">
-        <ul class="nav navbar-nav">
+      <div class="collapse navbar-collapse lenguage-hidden" lenguage-hiddenid="nav_menu">
+        <ul class="nav navbar-nav lenguage-hidden">
           <li role="presentation"><a class="go-to" href="#home">Home <span class="sr-only">(current)</span></a></li>
           <li role="presentation"><a class="go-to" href="#services">Services</a></li>
           <li role="presentation"><a class="go-to" href="#about">About</a></li>
@@ -69,11 +69,13 @@
     <h2 class="uppercase">When life gives you <span class="text-yellow">lemons</span></h2>
     <h2 class="uppercase">squeeze them in peoples eyes</h2>
 
-    <button class="btn lenguage-btn" value="false">English</button>|<button class="btn lenguage-btn" value="true">Spanish</button>
+    <div class="lenguage-selections"><button class="btn lenguage-btn" value="false">English</button>|<button class="btn lenguage-btn" value="true">Spanish</button></div>
+    
   </div>
+  <div class="arrows lenguage-hidden"></div>
 </section>
 
-<section class="container-fluid  light">
+<section class="container-fluid lenguage-hidden  light">
   <div id="services" class="container section">
     <h2 class="title">Our Services</h2>
 
@@ -82,7 +84,7 @@
   </div>
 </section>
 
-<section id="about" class="container-fluid yellow section-before-rotate">
+<section id="about" class="container-fluid lenguage-hidden yellow section-before-rotate">
    <div  class="container section">
     <h2 class="title">About</h2>
     <ul class="inline-list about row">
@@ -97,7 +99,7 @@
   <div class="fixed-background"></div>
 </section>
 
-<section class="container-fluid images-section section-rotate">
+<section class="container-fluid lenguage-hidden images-section section-rotate">
   <div class="rotate-bacground-left dark">
     <ul class="inline-list row">
       <li><img src="app/media/WildLemons-header.jpg" alt=""></li>
@@ -109,12 +111,12 @@
   </div>
 </section>
 
-<!-- <section class="container-fluid yellow">
+<!-- <section class="container-fluid lenguage-hidden yellow">
   <div id="work" class="container section">
   </div>
 </section> -->
 
-<section id="members" class="container-fluid  section-rotate">
+<section id="members" class="container-fluid lenguage-hidden  section-rotate">
   <div class="rotate-bacground-left light"></div>
     <div  class="container section">
      <h2 class="title">Our Members</h2>
@@ -125,7 +127,7 @@
     </div>
 </section>
 
-<section id="contact" class="container-fluid yellow section-after-rotate">
+<section id="contact" class="container-fluid lenguage-hidden yellow section-after-rotate">
    <div  class="container section">
     <h2 class="title">Contact</h2>
     <form onsubmit="return false">
@@ -153,7 +155,7 @@
   <div class="fixed-background"></div>
 </section>
 
-<footer class="container-fluid dark">
+<footer class="container-fluid lenguage-hidden dark">
   <div class="container section footer">
     
   </div>
