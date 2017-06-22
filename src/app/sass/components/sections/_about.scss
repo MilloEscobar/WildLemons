@@ -39,9 +39,6 @@
 		overflow: hidden;
 		width: 25%;
 		height: 100%;
-		transform: rotate(-10deg);
-		-ms-transform: rotate(-10deg); /* IE 9 */
-		-webkit-transform: rotate(-10deg);
 
 		img {
 			position: absolute;
@@ -49,5 +46,17 @@
 			height: 100%;
 			width: initial;
 		}
+	}
+
+	.rotate-bacground-right li {
+		transform: rotate(-10deg);
+		-ms-transform: rotate(-10deg); /* IE 9 */
+		-webkit-transform: rotate(-10deg);
+	}
+
+	.rotate-bacground-left li {
+		transform: rotate(10deg);
+		-ms-transform: rotate(10deg); /* IE 9 */
+		-webkit-transform: rotate(10deg);
 	}
 }
