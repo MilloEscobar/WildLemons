@@ -10,27 +10,6 @@
 		if (!rerender) {
 			$('#about li img').attr("src", "https:"+res.includes.Asset[0].fields.file.url);
 		}
-		
-				
-		// for (var i = 0; i < res.items.length; i++) {
-		// 	var product = document.createElement("li");
-		// 	$(product).addClass('list-group-item');
-
-		// 	var name = document.createElement("h3");
-		// 	$(name).html(res.items[i].fields.name);
-
-		// 	var price = document.createElement("p");
-		// 	$(price).text('$'+res.items[i].fields.precio+res.items[i].fields.sistemaDeMedida);
-
-		// 	if (res.items[i].fields.precioOferta) {
-		// 		var priceDiscount = document.createElement("p");
-		// 		$(priceDiscount).text(''+res.items[i].fields.precioOferta+res.items[i].fields.sistemaDeMedida);
-		// 	}			
-
-		// 	$(product).append(name, price , priceDiscount);
-		// 	$(app.MATERIALS_LIST).append(product);
-		
-		// }
 	}
 
 	app.renderMembers = function (res) {
@@ -100,6 +79,17 @@
 		} else {
 			//console.log('english');
 		}
+
+	}
+	app.renderAboutImages  = function (res, rerender) {
+		app.ABOUTIMAGES = res;
+		console.log('renderAboutImages', app.ABOUTIMAGES.includes.Asset);
+
+
+		for (var i = 1; i < 5; i++) {
+			$('#about-img-'+i).attr("src", "https:"+app.ABOUTIMAGES.includes.Asset[i].fields.file.url);
+		}
+		
 
 	}
 

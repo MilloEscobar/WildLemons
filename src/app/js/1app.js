@@ -6,6 +6,7 @@ var app = function (window) {
 	var ACCESS_TOKEN = '31dbd1f65af6d8809fe96da31d38db04180043a06854cc19b39431317cd4d3b5',
 	SPACE_ID = 'o2re92u0b14d',
 	MEMBERS_ID = 'members',
+	ABOUTIMAGES_ID = 'aboutImges',
 	SERVICES_ID='services',
 	ABOUT_ID='about',
 	WORKS_ID='works',
@@ -86,11 +87,12 @@ var app = function (window) {
 			app.SPANISH = true;
 		} else {
 			app.SPANISH = false;
+			changeLenguage();
 		}
 
 		LENGUAGE_HIDDEN.removeClass('lenguage-hidden');
 		LENGUAGE_SELECTOR.addClass('lenguage-hidden');
-		changeLenguage();
+		
 	});
 
 	function changeLenguage() {
@@ -107,6 +109,7 @@ var app = function (window) {
 		MEMBERS_ID : MEMBERS_ID,
 		SERVICES_ID : SERVICES_ID,
 		ABOUT_ID : ABOUT_ID,
+		ABOUTIMAGES_ID : ABOUTIMAGES_ID,
 		WORKS_ID : WORKS_ID,
 		MATERIALS_LIST : MATERIALS_LIST,
 		FORM_NAME : FORM_NAME,

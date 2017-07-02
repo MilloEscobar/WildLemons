@@ -55,4 +55,18 @@
 
 		app.ajax(object);
 	}
+
+	app.getWorks = function () {
+		var url = 'https://cdn.contentful.com/spaces/'+app.SPACE_ID+'/entries?access_token='+app.ACCESS_TOKEN+'&content_type='+app.ABOUTIMAGES_ID;
+		object = {
+					url : url,
+					method : "GET",
+					callback : app.renderAboutImages,
+                    errorCallback : app.renderAboutImages,
+                    dataType : 'json',
+                    headers: {}
+				}
+
+		app.ajax(object);
+	}
 }(window));

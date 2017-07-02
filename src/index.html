@@ -102,10 +102,10 @@
 <section class="container-fluid lenguage-hidden images-section section-rotate">
   <div class="rotate-bacground-left dark">
     <ul class="inline-list row">
-      <li><img src="app/media/WildLemons-header.jpg" alt=""></li>
-      <li><img src="app/media/WildLemons-header.jpg" alt=""></li>
-      <li><img src="app/media/WildLemons-header.jpg" alt=""></li>
-      <li><img src="app/media/WildLemons-header.jpg" alt=""></li>
+      <li><img id="about-img-1" src="app/media/WildLemons-header.jpg" alt=""></li>
+      <li><img id="about-img-2" src="app/media/WildLemons-header.jpg" alt=""></li>
+      <li><img id="about-img-3" src="app/media/WildLemons-header.jpg" alt=""></li>
+      <li><img id="about-img-4" src="app/media/WildLemons-header.jpg" alt=""></li>
     </ul>
     <div class="opacity-medium opacity-dark"></div>
   </div>
@@ -130,27 +130,36 @@
 <section id="contact" class="container-fluid lenguage-hidden yellow section-after-rotate">
    <div  class="container section">
     <h2 class="title">Contact</h2>
-    <form onsubmit="return false">
-      <div class="form-group">
-        <label for="formName">Name</label>
-        <input class="form-control" id="formName" type="text" name="name" placeholder="Name" required>
+    <div class="row">
+      <div class=" col-xs-12 col-sm-6">
+        <form onsubmit="return false">
+          <div class="form-group">
+            <label for="formName">Your name</label>
+            <input class="form-control" id="formName" type="text" name="name" placeholder="Ej.: Chuck Norris" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Your email address</label>
+            <input class="form-control" id="formEmail" type="email" name="_replyto" placeholder="Ej.: norrischuck@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">Your message</label>
+            <textarea class="form-control" id="formMessage" name="message" placeholder="Ej.: This is a Chuck Norris message" required></textarea>
+          </div>
+          <input id="gotcha" type="text" name="_gotcha" style="display:none"/>
+          <button id="sendEmail type="submit" class="btn btn-default">Submit</button>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Email address</label>
-        <input class="form-control" id="formEmail" type="email" name="_replyto" placeholder="Email" required>
+      <div class=" col-xs-12 col-sm-6">
+        
+        <ul class="inline-list">
+          <h4 class="title">You can find us in:</h4>
+          <li class="col-xs-6 icon facebook-main"><a href="https://www.facebook.com/wildlemons.cr" target="_blank">Facebook</a></li>
+          <li class="col-xs-6 icon instaram-main"><a href="https://www.instagram.com/wildlemons.cr" target="_blank">Instaram</a></li>
+        </ul>
       </div>
-      <div class="form-group">
-        <label for="exampleInputFile">Message</label>
-        <textarea class="form-control" id="formMessage" name="message" placeholder="Message" required></textarea>
-      </div>
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Check me out
-        </label>
-      </div>
-      <input id="gotcha" type="text" name="_gotcha" style="display:none"/>
-      <button id="sendEmail type="submit" class="btn btn-default">Submit</button>
-    </form>
+    </div>
+    
+
   </div>
   <div class="fixed-background"></div>
 </section>

@@ -42,9 +42,26 @@
 
 		img {
 			position: absolute;
-			left: -50%;
+			left: -200%;
 			height: 100%;
 			width: initial;
+
+			
+			@media (min-width: $xs-width) {
+				left: -90%;
+			}
+
+			@media (min-width: $sm-width) {
+				left: -70%;
+			}
+
+			@media (min-width: $md-width) {
+				left: -50%;
+			}
+
+			@media (min-width: $lg-width) {
+				left: -30%;
+			}
 		}
 	}
 
