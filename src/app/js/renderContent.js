@@ -83,8 +83,6 @@
 	}
 	app.renderAboutImages  = function (res, rerender) {
 		app.ABOUTIMAGES = res;
-		console.log('renderAboutImages', app.ABOUTIMAGES.includes.Asset);
-
 
 		for (var i = 1; i < 5; i++) {
 			$('#about-img-'+i).attr("src", "https:"+app.ABOUTIMAGES.includes.Asset[i].fields.file.url);

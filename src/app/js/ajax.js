@@ -16,9 +16,8 @@
             method: object.method,
             data: object.data,
             dataType : object.dataType,
-
+            headers : object.headers,
             success: function (response) {
-                console.log(response);
                 object.callback(response);
             },
             error: function (jqXHR, exception) {
