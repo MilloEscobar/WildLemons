@@ -18,6 +18,7 @@
             dataType : object.dataType,
 
             success: function (response) {
+                console.log(response);
                 object.callback(response);
             },
             error: function (jqXHR, exception) {

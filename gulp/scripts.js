@@ -18,7 +18,7 @@ gulp.task('scripts', function() {
     return gulp.src( 'src/app/js/**/*.js')
       	.pipe(concat('app.js'))
       	.pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
+        .pipe($.uglify({ preserveComments: $.uglifySaveLicense })).on('error', conf.errorHandler('Uglify'))
         .pipe(gulp.dest('src'))
         .pipe(browserSync.reload({ stream: true }));
 });
