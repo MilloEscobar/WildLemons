@@ -41,6 +41,12 @@ img {
   height: auto;
 }
 
+.form-control {
+  background-color: $white;
+  border: none;
+  border-radius: 10px;
+}
+
 .lenguage-hidden {
   display: none;
 }
