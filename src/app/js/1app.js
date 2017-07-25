@@ -39,7 +39,7 @@ var app = function (window) {
 	*/
 	FORM_BUTTON.on( "click", function(e) {
 		e.preventDefault();
-  		app.form();
+  		app.suscribe();
 	});
 
 

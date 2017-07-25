@@ -69,4 +69,28 @@
 
 		app.ajax(object);
 	}
+
+	app.suscribe = function () {
+		var url = 'https://us16.api.mailchimp.com/3.0/lists/7536c31e36/members/';
+		object = {
+					url : url,
+					method : "POST",
+					callback : app.formResponse,
+                    errorCallback : app.formResponse,
+                    dataType : 'json',
+                    headers: {
+                    	'content-type': , 'application/json'
+                    	'Authorization': 'Basic dXNlcjpiYjA2NjVhYTY1OTExNTE4Y2M4YTRmOTA2NDc4YzM5MS11czE2'
+                	},
+                	data : {
+					    "email_address": app.FORM_EMAIL,
+					    "status": "subscribed",
+					    "merge_fields": {
+					        "NAME": app.FORM_NAME
+					    }
+					}
+				}
+
+		app.ajax(object);
+	}
 }(window));
