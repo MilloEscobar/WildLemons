@@ -85,9 +85,10 @@ var app = function (window) {
 		e.preventDefault();
 		if (this.value === 'true') {
 			app.SPANISH = true;
+			changeLenguage();
 		} else {
 			app.SPANISH = false;
-			changeLenguage();
+			
 		}
 
 		LENGUAGE_HIDDEN.removeClass('lenguage-hidden');
