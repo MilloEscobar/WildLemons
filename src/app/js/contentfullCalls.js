@@ -78,12 +78,16 @@
 					method : "POST",
 					callback : app.formResponse,
                     errorCallback : app.formResponse,
-                    dataType : 'jsonp',
+                    dataType : 'json',
                     headers:  {
 					    "content-type": "application/json",
-					    "authorization": "Basic dXNlcjpiYjA2NjVhYTY1OTExNTE4Y2M4YTRmOTA2NDc4YzM5MS11czE2",
+					    "Authorization": "Basic dXNlcjpiYjA2NjVhYTY1OTExNTE4Y2M4YTRmOTA2NDc4YzM5MS11czE2",
+					    "Access-Control-Allow-Headers": "x-requested-with" ,
+					    "Access-Control-Allow-Headers": "*",
+					    "Access-Control-Allow-Origin":"*"
 					},
                 	data : {
+                		"apikey" : "dXNlcjpiYjA2NjVhYTY1OTExNTE4Y2M4YTRmOTA2NDc4YzM5MS11czE2",
 					    "email_address": app.FORM_EMAIL,
 					    "status": "subscribed",
 					    "merge_fields": {
@@ -92,7 +96,8 @@
 					}
 				}
 
-		app.ajax(object);
+		app.ajax(object)
+
 	}
 }(window));
 
