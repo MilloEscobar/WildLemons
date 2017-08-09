@@ -70,34 +70,23 @@
 		app.ajax(object);
 	}
 
-	app.suscribe = function () {
-		console.log('subscribed');
-		var url = 'https://us16.api.mailchimp.com/3.0/lists/7536c31e36/members/';
+	app.form = function () {
 		object = {
-					url : url,
-					method : "POST",
-					callback : app.formResponse,
-                    errorCallback : app.formResponse,
-                    dataType : 'json',
-                    headers:  {
-					    "content-type": "application/json",
-					    "Authorization": "Basic dXNlcjpiYjA2NjVhYTY1OTExNTE4Y2M4YTRmOTA2NDc4YzM5MS11czE2",
-					    "Access-Control-Allow-Headers": "x-requested-with" ,
-					    "Access-Control-Allow-Headers": "*",
-					    "Access-Control-Allow-Origin":"*"
+		    url: "https://formspree.io/milloescobar@gmail.com", 
+		    method: "POST",
+		    data: {	
+		    		message: app.FORM_MESSAGE,
+		    		_gotcha : app.FORM_GOTCHA,
+		    		_subject : "NEW CLIENT",
+		    		email : app.FORM_EMAIL,
 					},
-                	data : {
-                		"apikey" : "dXNlcjpiYjA2NjVhYTY1OTExNTE4Y2M4YTRmOTA2NDc4YzM5MS11czE2",
-					    "email_address": app.FORM_EMAIL,
-					    "status": "subscribed",
-					    "merge_fields": {
-					        "NAME": app.FORM_NAME
-					    }
-					}
-				}
-
-		app.ajax(object)
-
+		    callback : app.formSuccess,
+		    errorCallback : app.formError,
+		    headers: {},
+		    dataType: "json"
+		}
+		app.ajax(object);
 	}
+
 }(window));
 

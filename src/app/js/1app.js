@@ -22,7 +22,7 @@ var app = function (window) {
 	a = HEADER_SECTION.offset().top + $(".header-space").height() - 70,
 	LENGUAGE_SELECTOR = $('.lenguage-selections'),
 	LENGUAGE_HIDDEN = $('.lenguage-hidden'),
-	NAV_LINKS= $('#navbar-scroll .go-to');
+	NAV_LINKS= $('.go-to');
 
 
 	/************* 
@@ -39,7 +39,7 @@ var app = function (window) {
 	*/
 	FORM_BUTTON.on( "click", function(e) {
 		e.preventDefault();
-  		app.suscribe();
+  		app.form();
 	});
 
 

@@ -91,7 +91,11 @@
 
 	}
 
-	app.formResponse = function (res) {
+	app.formSuccess = function (res) {
+		console.log('formSuccess',res);
+	}
+
+	app.formError = function (res) {
 		console.log('formSuccess',res);
 	}
 

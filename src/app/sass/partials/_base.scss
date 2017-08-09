@@ -31,8 +31,12 @@ h1, h2, h3, h4, h5 {
 margin-top: 0;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
 section, div {
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 }
 
 img {
@@ -44,7 +48,8 @@ img {
 .form-control {
   background-color: $white;
   border: none;
-  border-radius: 10px;
+  border-radius: 0.5rem;
+  height: 28px;
 }
 
 .lenguage-hidden {
@@ -106,5 +111,29 @@ img {
       border-bottom:$arrow_size/10 solid $main_gray;
       opacity: 0;
       transform:translate($arrow_size/-6,$arrow_size*4/6)rotate(-45deg) ;
+  }
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+}
+
+.btn-yellow {
+  background-color: $main_yellow;
+  border: 1px solid $main_yellow;
+  color: $dark_gray;
+  &:hover {
+    background-color: $dark_gray;
+    color: $main_yellow;
+  }
+}
+
+.btn-gray {
+  background-color: $dark_gray;
+  border: 1px solid $dark_gray;
+  color: $main_yellow;
+  &:hover {
+    background-color: $main_yellow;
+    color: $dark_gray;
   }
 }

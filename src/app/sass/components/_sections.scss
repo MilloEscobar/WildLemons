@@ -47,7 +47,8 @@ position: relative;
 	}
 
 	>.title {
-		font-family: 'Amatica SC', cursive;
+		font-family: $title_font;
+		font-weight: bold;
 		text-align: center;
 		margin-bottom: 6rem;
 	}
