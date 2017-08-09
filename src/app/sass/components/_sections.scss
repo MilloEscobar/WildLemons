@@ -195,3 +195,44 @@ position: relative;
 		}
 	}
 }
+
+.footer {
+	padding-bottom:0.7rem;
+	.navbar-brand {
+		
+		width: 100%;
+		padding:0;
+		position: relative;
+		overflow: hidden;
+		height: auto;
+
+		img {
+			width: 3rem;
+			display: inline-block;
+		}
+
+		h2 {
+			font-size: 2.3rem;
+			display: inline-block;
+			font-family: $title_font;
+			margin-top: 10px;
+			font-weight: bold;
+		}
+	}
+
+	.nav-footer {
+		li {
+			margin-bottom: 1rem;
+		}
+
+		a:hover {
+			color: $main_yellow;
+			font-weight: bold;
+		}
+	}
+}
+
+.copyright {
+	margin-top: 3rem;
+	text-align:center;
+}

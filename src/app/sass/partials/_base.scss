@@ -45,6 +45,21 @@ img {
   height: auto;
 }
 
+a {
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+ul,li {
+  padding:0;
+  text-decoration: none;
+  list-style: none;
+}
+
 .form-control {
   background-color: $white;
   border: none;
