@@ -12,10 +12,10 @@ var app = function (window) {
 	WORKS_ID='works',
 	MATERIALS_LIST = $('#materials'),
 	FORM_BUTTON = $('#sendEmail'),
-	FORM_NAME = $('#formName').val(),
-	FORM_GOTCHA = $('#gotcha').val(),
-	FORM_MESSAGE = $('#formMessage').val(),
-	FORM_EMAIL = $('#formEmail').val(),
+	FORM_NAME = $('#formName'),
+	FORM_GOTCHA = $('#gotcha'),
+	FORM_MESSAGE = $('#formMessage'),
+	FORM_EMAIL = $('#formEmail'),
 	HEADER_SECTION = $(".header-space"),
 	SPANISH = false,
 	LENGUAGE_BTN = $('.lenguage-btn'),
@@ -32,11 +32,8 @@ var app = function (window) {
 	/*
 	* smooth scrolling
 	*/
-	jQuery.scrollSpeed(80, 1000);
+	//$.scrollSpeed(1000);
 
-	/*
-	* smooth scrolling
-	*/
 	FORM_BUTTON.on( "click", function(e) {
 		e.preventDefault();
   		app.form();
@@ -47,9 +44,9 @@ var app = function (window) {
 	* go to section srolling
 	*/
 	function goToByScroll(id){
-    $('html,body').animate({
-        scrollTop: ($(id).offset().top)},
-        'slow');
+	    $('html,body').animate({
+	        scrollTop: ($(id).offset().top
+	    )}, 1000);
 	}
 
 	NAV_LINKS.click(function(e) { 
@@ -69,7 +66,6 @@ var app = function (window) {
 	});
 
 	$(document).on('scroll', function(){
-
 		if($(this).scrollTop() > a) {   
 			$('.nav-wrapper').removeClass("transparent");
 		} else {
@@ -88,12 +84,10 @@ var app = function (window) {
 			changeLenguage();
 		} else {
 			app.SPANISH = false;
-			
 		}
 
 		LENGUAGE_HIDDEN.removeClass('lenguage-hidden');
 		LENGUAGE_SELECTOR.addClass('lenguage-hidden');
-		
 	});
 
 	function changeLenguage() {

@@ -92,11 +92,16 @@
 	}
 
 	app.formSuccess = function (res) {
-		console.log('formSuccess',res);
+
+		app.FORM_NAME.val() = '';
+		app.FORM_GOTCHA .val() = '';
+		app.FORM_MESSAGE.val() = '';
+		app.FORM_EMAIL.val() = '';
+
 	}
 
 	app.formError = function (res) {
-		console.log('formSuccess',res);
+		console.log('formError',res);
 	}
 
 }(window));
