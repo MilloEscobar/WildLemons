@@ -65,6 +65,7 @@ ul,li {
   border: none;
   border-radius: 0.5rem;
   height: 28px;
+  box-shadow: none;
 }
 
 .lenguage-hidden {
@@ -150,5 +151,17 @@ ul,li {
   &:hover {
     background-color: $main_yellow;
     color: $dark_gray;
+  }
+}
+
+.icon {
+  i {
+    font-size: 3rem;
+  }
+  span {
+    font-family: $title-font;
+    font-size: 2rem;
+    font-weight: bold;
+    vertical-align: top;
   }
 }
