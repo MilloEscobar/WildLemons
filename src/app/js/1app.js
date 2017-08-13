@@ -22,7 +22,8 @@ var app = function (window) {
 	a = HEADER_SECTION.offset().top + $(".header-space").height() - 70,
 	LENGUAGE_SELECTOR = $('.lenguage-selections'),
 	LENGUAGE_HIDDEN = $('.lenguage-hidden'),
-	NAV_LINKS= $('.go-to');
+	OTHER_LINKS= $('.go-to'),
+	NAV_LINKS= $('#nav_menu .go-to');
 
 
 	/************* 
@@ -53,6 +54,13 @@ var app = function (window) {
 	      // Prevent a page reload when a link is pressed
 	    e.preventDefault(); 
 	    $( "#navbar-icon" ).trigger( "click" );
+	      // Call the scroll function
+	    goToByScroll($(this).attr('href'));           
+	});
+
+	OTHER_LINKS.click(function(e) { 
+	      // Prevent a page reload when a link is pressed
+	    e.preventDefault(); 
 	      // Call the scroll function
 	    goToByScroll($(this).attr('href'));           
 	});

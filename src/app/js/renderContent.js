@@ -93,10 +93,21 @@
 
 	app.formSuccess = function (res) {
 
-		app.FORM_NAME.val() = '';
-		app.FORM_GOTCHA .val() = '';
-		app.FORM_MESSAGE.val() = '';
-		app.FORM_EMAIL.val() = '';
+		var form = $('#form');
+		app.FORM_NAME.val();
+		app.FORM_GOTCHA .val();
+		app.FORM_MESSAGE.val();
+		app.FORM_EMAIL.val();
+
+		if (!app.SPANISH) {
+			var successForm = '<p>Thanks for your interest '+app.FORM_NAME.val()+', we will contact you via your email '+ app.FORM_EMAIL.val() +' as soon as posilbble</p>';
+		}else{
+			var successForm = '<p>Gracias por tu interes '+app.FORM_NAME.val()+' , te contactaremos por medio de tu email '+ app.FORM_EMAIL.val() +' lo mas pronto posible</p>';
+		}
+		
+		form.html(successForm);
+
+
 
 	}
 
