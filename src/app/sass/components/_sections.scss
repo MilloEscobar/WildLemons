@@ -46,8 +46,16 @@ position: relative;
 		min-height: 20rem;
 	}
 
-	>.title {
+	h2.title {
 		font-family: $title_font;
+		font-weight: bold;
+		text-align: center;
+		margin-bottom: 6rem;
+	}
+
+	h4.title {
+		letter-spacing: -1px;
+		word-spacing: -2px;
 		font-weight: bold;
 		text-align: center;
 		margin-bottom: 6rem;
@@ -58,12 +66,15 @@ position: relative;
   	}
 }
 
+.title-font {
+	font-family: $title_font;
+}
+
 .section-rotate {
 	position: relative;
 	
 	.section {
 		min-height: 30rem;
-		// padding:8rem;
 		z-index: 10;
 	}
 }
@@ -153,7 +164,7 @@ position: relative;
 
 	h2 {
 		color: inherit;
-		font-family: 'Amatica SC', cursive;
+		font-family: $title_font;
 	}
 }
 

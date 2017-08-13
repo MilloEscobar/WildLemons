@@ -157,11 +157,11 @@ ul,li {
 .icon {
   i {
     font-size: 3rem;
+    vertical-align: middle;
   }
   span {
-    font-family: $title-font;
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    vertical-align: top;
+    vertical-align: middle;
   }
 }
