@@ -41,6 +41,7 @@ position: relative;
 	padding-top:8rem;
 	padding-bottom:8rem;
 	position: relative;
+	z-index:3;
 
 	&.footer {
 		min-height: 20rem;
@@ -83,10 +84,13 @@ position: relative;
 
 	.fixed-background {
     background-color: inherit;
-    height: 15rem;
+    left: -50%;
+    height: 22rem;
     position: absolute;
     top: 100%;
-    width: 100%;
+	width: 200%;
+	margin-top: -230px;
+
 	}
 	.section {
 
@@ -98,10 +102,11 @@ position: relative;
 .section-after-rotate {
 	.fixed-background {
     background-color: inherit;
-    height: 15rem;
+    left: -50%;
+    height: 20rem;
     position: absolute;
-    bottom: 100%;
-    width: 100%;
+    top: 30px;
+    width: 200%;
 	}
 	.section {
 
