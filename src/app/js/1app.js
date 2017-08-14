@@ -35,7 +35,35 @@ var app = function (window) {
 
 	FORM_BUTTON.on( "click", function(e) {
 		e.preventDefault();
-		if (FORM_NAME.val() != '' && FORM_GOTCHA.val() != '' && FORM_MESSAGE.val() != '') {
+
+		var emailChek = true,
+		nameCheck = true;
+
+		$('.input-required').removeClass('field-error');
+		$('.input-required').siblings('span').addClass('hidden');
+		
+		if (FORM_NAME.val() == '') {
+			FORM_NAME.addClass('field-error');
+			FORM_NAME.siblings('.empty-field').removeClass('hidden');
+			nameCheck = false;
+		}
+
+		if (FORM_EMAIL.val() == '') {
+			FORM_EMAIL.addClass('field-error');
+			FORM_EMAIL.siblings('.empty-field').removeClass('hidden');
+			emailChek = false;
+			
+		}else {
+			var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			regex.test(FORM_EMAIL.val());
+
+			if (!(regex.test(FORM_EMAIL.val()))) {
+				FORM_EMAIL.siblings('.email-field').removeClass('hidden');
+				emailChek = false;
+			}
+		}
+
+		if (nameCheck != '' && emailChek) {
 			SPINNER.removeClass('hidden');
 			app.form();
 		}
