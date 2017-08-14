@@ -48,14 +48,13 @@ position: relative;
 
 	h2.title {
 		font-family: $title_font;
-		font-weight: bold;
+		text-transform: uppercase;
 		text-align: center;
+		font-size: 2rem;
 		margin-bottom: 6rem;
 	}
 
 	h4.title {
-		letter-spacing: -1px;
-		word-spacing: -2px;
 		font-weight: bold;
 		text-align: center;
 		margin-bottom: 6rem;
@@ -154,20 +153,6 @@ position: relative;
 	background-color: $dark_gray;
 }
 
-.header-text {
-	position: absolute;
-	color: $main_gray;
-	text-align: center;
-	top: 50%;
-	width: 100%;
-	margin-top: -100px;
-
-	h2 {
-		color: inherit;
-		font-family: $title_font;
-	}
-}
-
 .background-img {
 	background-position: center;
 	background-repeat: no-repeat;
@@ -203,46 +188,6 @@ position: relative;
 			text-align: center;
 			font-size: 1.6rem;
 			font-weight: 100;
-		}
-	}
-}
-
-.footer {
-	padding-bottom:1rem;
-	padding-top: 3rem;
-	.navbar-brand {
-		
-		width: 100%;
-		padding:0;
-		position: relative;
-		overflow: hidden;
-		height: auto;
-
-		img {
-			width: 3rem;
-			display: inline-block;
-			vertical-align: top;
-		}
-
-		h2 {
-			font-size: 2.3rem;
-			display: inline-block;
-			font-family: $title_font;
-			margin: 0.25rem 0 0 0;
-			font-weight: bold;
-			vertical-align: top;
-		}
-	}
-
-	.nav-footer {
-		text-align: right;
-		li {
-			margin-bottom: 1rem;
-		}
-
-		a:hover {
-			color: $main_yellow;
-			font-weight: bold;
 		}
 	}
 }

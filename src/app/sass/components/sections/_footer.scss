@@ -1,0 +1,39 @@
+.footer {
+	padding-bottom:1rem;
+	padding-top: 3rem;
+	.navbar-brand {
+		
+		width: 100%;
+		padding:0;
+		position: relative;
+		overflow: hidden;
+		height: auto;
+
+		img {
+			width: 3rem;
+			display: inline-block;
+			vertical-align: top;
+		}
+
+		h2 {
+			font-size: 2.3rem;
+			display: inline-block;
+			font-family: $title_font_secondary;
+			margin: 0.25rem 0 0 0;
+			font-weight: bold;
+			vertical-align: top;
+		}
+	}
+
+	.nav-footer {
+		text-align: right;
+		li {
+			margin-bottom: 1rem;
+		}
+
+		a:hover {
+			color: $main_yellow;
+			font-weight: bold;
+		}
+	}
+}

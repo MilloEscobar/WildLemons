@@ -68,7 +68,7 @@ ul,li {
   box-shadow: none;
 }
 
-.lenguage-hidden {
+.hidden, .lenguage-hidden {
   display: none;
 }
 
@@ -164,4 +164,13 @@ ul,li {
     font-weight: bold;
     vertical-align: middle;
   }
+}
+
+.error-message-field {
+  color: red;
+  font-size: 1rem;
+}
+
+.field-error {
+ border: 1px solid red;
 }

@@ -44,10 +44,10 @@
 			margin: 2rem 0;
 			padding: 0 2px;
 			color: $main_gray;
-			font-family: $title_font;
+			font-family: $title_font_secondary;
 
 			h1 {
-				font-size: 2.4rem;
+				font-size: 2rem;
 			}
 		}
 
@@ -131,6 +131,21 @@
 		}
 	}
 	
+}
+
+.header-text {
+	position: absolute;
+	color: $main_gray;
+	text-align: center;
+	top: 50%;
+	width: 100%;
+	margin-top: -100px;
+
+	h2 {
+		color: inherit;
+		font-weight: lighter;
+		font-family: $title_font_secondary;
+	}
 }
 
 .btn {

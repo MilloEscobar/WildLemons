@@ -1,0 +1,25 @@
+.contact {
+	.row {
+		>div {
+			margin: 5rem auto;
+
+			&:first-child {
+				margin-top: 0;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			@media (min-width: $sm-width) {
+				margin-bottom: 0;
+			}
+		}
+		li {
+			text-align: center;
+		}
+
+		i {
+			display: block;
+		}
+	}
+}

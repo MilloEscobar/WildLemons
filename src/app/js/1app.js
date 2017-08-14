@@ -24,6 +24,7 @@ var app = function (window) {
 	LENGUAGE_SELECTOR = $('.lenguage-selections'),
 	LENGUAGE_HIDDEN = $('.lenguage-hidden'),
 	OTHER_LINKS= $('.go-to'),
+	SPINNER = $('#spinner'),
 	NAV_LINKS= $('#nav_menu .go-to');
 
 
@@ -34,7 +35,11 @@ var app = function (window) {
 
 	FORM_BUTTON.on( "click", function(e) {
 		e.preventDefault();
-  		app.form();
+		if (FORM_NAME.val() != '' && FORM_GOTCHA.val() != '' && FORM_MESSAGE.val() != '') {
+			SPINNER.removeClass('hidden');
+			app.form();
+		}
+		
 	});
 
 
@@ -117,6 +122,7 @@ var app = function (window) {
 		EMAIL_SUBMIT_FORM :EMAIL_SUBMIT_FORM,
 		FORM_MESSAGE : FORM_MESSAGE,
 		SPANISH : SPANISH,
+		SPINNER : SPINNER,
 		FORM_EMAIL : FORM_EMAIL,
 	}
 	

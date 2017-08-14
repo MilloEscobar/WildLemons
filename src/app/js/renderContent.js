@@ -54,7 +54,7 @@
 						imgUrl = app.SERVICES.includes.Asset[j].fields.file.url
 					}	
 				}
-				content = content + '<li class="col-xs-12 col-sm-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.nameSpanish+'</h4><p>'+app.SERVICES.items[i].fields.descriptionSpanish+'</p></li>';
+				content = content + '<li class="col-xs-12 col-sm-6 col-lg-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.nameSpanish+'</h4><p>'+app.SERVICES.items[i].fields.descriptionSpanish+'</p></li>';
 			}
 			ul.html(content);
 		} else {
@@ -65,7 +65,7 @@
 						imgUrl = app.SERVICES.includes.Asset[j].fields.file.url
 					}	
 				}
-				content = content + '<li class="col-xs-12 col-sm-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.name+'</h4><p>'+app.SERVICES.items[i].fields.descriptionEnglish+'</p></li>';
+				content = content + '<li class="col-xs-12 col-sm-6 col-lg-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.name+'</h4><p>'+app.SERVICES.items[i].fields.descriptionEnglish+'</p></li>';
 			}
 			ul.html(content);
 		}
@@ -92,7 +92,6 @@
 	}
 
 	app.formSuccess = function (res) {
-
 		var form = $('#form');
 		app.FORM_NAME.val();
 		app.FORM_GOTCHA .val();
@@ -106,9 +105,7 @@
 		}
 		
 		form.html(successForm);
-
-
-
+		app.SPINNER.addClass('hidden');
 	}
 
 	app.formError = function (res) {
