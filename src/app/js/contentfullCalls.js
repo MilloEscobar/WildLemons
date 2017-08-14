@@ -72,7 +72,7 @@
 
 	app.form = function () {
 		object = {
-		    url: "https://formspree.io/milloescobar@gmail.com", 
+		    url: "https://formspree.io/"+app.EMAIL_SUBMIT_FORM, 
 		    method: "POST",
 		    data: {	
 		    		name: app.FORM_NAME.val(),

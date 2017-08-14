@@ -16,6 +16,7 @@ var app = function (window) {
 	FORM_GOTCHA = $('#gotcha'),
 	FORM_MESSAGE = $('#formMessage'),
 	FORM_EMAIL = $('#formEmail'),
+	EMAIL_SUBMIT_FORM = 'wildlemonscr@gmail.com',
 	HEADER_SECTION = $(".header-space"),
 	SPANISH = false,
 	LENGUAGE_BTN = $('.lenguage-btn'),
@@ -30,10 +31,6 @@ var app = function (window) {
 	APP EVENTS ACTIONS 
 	**************/
 
-	/*
-	* smooth scrolling
-	*/
-	//$.scrollSpeed(1000);
 
 	FORM_BUTTON.on( "click", function(e) {
 		e.preventDefault();
@@ -50,7 +47,7 @@ var app = function (window) {
 	    )}, 1000);
 	}
 
-	NAV_LINKS.click(function(e) { 
+	NAV_LINKS.on( "click", function(e) { 
 	      // Prevent a page reload when a link is pressed
 	    e.preventDefault(); 
 	    $( "#navbar-icon" ).trigger( "click" );
@@ -117,6 +114,7 @@ var app = function (window) {
 		MATERIALS_LIST : MATERIALS_LIST,
 		FORM_NAME : FORM_NAME,
 		FORM_GOTCHA : FORM_GOTCHA,
+		EMAIL_SUBMIT_FORM :EMAIL_SUBMIT_FORM,
 		FORM_MESSAGE : FORM_MESSAGE,
 		SPANISH : SPANISH,
 		FORM_EMAIL : FORM_EMAIL,
