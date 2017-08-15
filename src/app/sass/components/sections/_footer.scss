@@ -1,16 +1,15 @@
 .footer {
 	padding-bottom:1rem;
 	padding-top: 3rem;
+
 	.navbar-brand {
 		
-		width: 100%;
 		padding:0;
-		position: relative;
-		overflow: hidden;
 		height: auto;
+		float: none;
 
 		img {
-			width: 3rem;
+			width: 2.4rem;
 			display: inline-block;
 			vertical-align: top;
 		}
@@ -26,9 +25,19 @@
 	}
 
 	.nav-footer {
-		text-align: right;
+		text-align: center;
+		margin:0;
 		li {
 			margin-bottom: 1rem;
+
+			@media (min-width: $sm-width) {
+				margin-bottom: 0;
+				display: inline-block;
+				margin-right: 4rem;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
 		}
 
 		a:hover {

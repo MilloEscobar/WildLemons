@@ -87,7 +87,7 @@ ul,li {
     height:100%;
     border-left:$arrow_size/10 solid $main_gray;
     opacity: $arrow_peakopacity;
-    border-bottom:$arrow_size/ solid $main_gray;
+    border-bottom:$arrow_size/10 solid $main_gray;
     transform:translate($arrow_size/10,$arrow_size*4/3)rotate(-45deg);
     animation: arrows $arrow_speed linear infinite;
   }
@@ -134,7 +134,7 @@ ul,li {
   padding: 0.5rem 2rem;
 }
 
-.btn-yellow {
+.btn-yellow,  .btn-yellow:focus {
   background-color: $main_yellow;
   border: 1px solid $main_yellow;
   color: $dark_gray;
@@ -144,7 +144,7 @@ ul,li {
   }
 }
 
-.btn-gray {
+.btn-gray, .btn-gray:focus {
   background-color: $dark_gray;
   border: 1px solid $dark_gray;
   color: $main_yellow;
