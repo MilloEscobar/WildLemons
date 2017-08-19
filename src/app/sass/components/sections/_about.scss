@@ -42,9 +42,10 @@
 
 		img {
 			position: absolute;
-			left: -200%;
-			height: 100%;
-			width: initial;
+		    left: -130%;
+		    height: 73%;
+		    top: 8%;
+		    width: initial;
 
 			
 			@media (min-width: $xs-width) {
@@ -61,6 +62,8 @@
 
 			@media (min-width: $lg-width) {
 				left: -30%;
+				height: 90%;
+				top: 0%;
 			}
 		}
 	}
