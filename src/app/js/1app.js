@@ -19,6 +19,7 @@ var app = function (window) {
 	EMAIL_SUBMIT_FORM = 'wildlemonscr@gmail.com',
 	HEADER_SECTION = $(".header-space"),
 	SPANISH = false,
+	COPYRIGHT = '#copyright-date'
 	LENGUAGE_BTN = $('.lenguage-btn'),
 	a = HEADER_SECTION.offset().top + $(".header-space").height() - 70,
 	LENGUAGE_SELECTOR = $('.lenguage-selections'),
@@ -32,6 +33,8 @@ var app = function (window) {
 	APP EVENTS ACTIONS 
 	**************/
 
+	var date = new Date();
+	$(COPYRIGHT).html(date.getFullYear());
 
 	FORM_BUTTON.on( "click", function(e) {
 		e.preventDefault();

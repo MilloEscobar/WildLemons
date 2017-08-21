@@ -54,7 +54,7 @@
 						imgUrl = app.SERVICES.includes.Asset[j].fields.file.url
 					}	
 				}
-				content = content + '<li class="col-xs-12 col-sm-6 col-lg-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.nameSpanish+'</h4><p>'+app.SERVICES.items[i].fields.descriptionSpanish+'</p></li>';
+				content = content + '<li class="col-xs-12 col-sm-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.nameSpanish+'</h4><p>'+app.SERVICES.items[i].fields.descriptionSpanish+'</p></li>';
 			}
 			ul.html(content);
 		} else {
@@ -65,7 +65,7 @@
 						imgUrl = app.SERVICES.includes.Asset[j].fields.file.url
 					}	
 				}
-				content = content + '<li class="col-xs-12 col-sm-6 col-lg-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.name+'</h4><p>'+app.SERVICES.items[i].fields.descriptionEnglish+'</p></li>';
+				content = content + '<li class="col-xs-12 col-sm-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.name+'</h4><p>'+app.SERVICES.items[i].fields.descriptionEnglish+'</p></li>';
 			}
 			ul.html(content);
 		}
@@ -100,9 +100,9 @@
 		app.FORM_EMAIL.val();
 
 		if (!app.SPANISH) {
-			var successForm = '<p>Thanks for your interest '+app.FORM_NAME.val()+', we will contact you via your email '+ app.FORM_EMAIL.val() +' as soon as posilbble</p>';
+			var successForm = '<p>We are happy you are here <b class="client-name">'+app.FORM_NAME.val()+'</b>! We look forward to join your project. We will contact you as soon as possilble <b>:)</b></p>';
 		}else{
-			var successForm = '<p>Gracias por tu interes '+app.FORM_NAME.val()+' , te contactaremos por medio de tu email '+ app.FORM_EMAIL.val() +' lo mas pronto posible</p>';
+			var successForm = '<p>Gracias por tu interes <b class="client-name">'+app.FORM_NAME.val()+'</b>, te contactaremos lo mas pronto posible. :)</p>';
 		}
 		
 		form.html(successForm);

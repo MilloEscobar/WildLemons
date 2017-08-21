@@ -1,7 +1,7 @@
 .contact {
 	.row {
 		>div {
-			margin: 5rem auto;
+			margin-bottom: 5rem;
 
 			&:first-child {
 				margin-top: 0;
@@ -22,4 +22,16 @@
 			display: block;
 		}
 	}
+	
+	p{
+		margin-top: 3rem;
+	    margin-bottom: 3rem;
+	    text-align: center;
+	}
+	h4.title {
+		margin-bottom: 3rem;
+	}
+}
+.client-name {
+	text-transform: capitalize;
 }

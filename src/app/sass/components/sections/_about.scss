@@ -8,6 +8,18 @@
 	p {
 		text-align: center;
 	}
+	li {
+		vertical-align: middle;
+		
+		&:first-child {
+			margin-bottom: 7rem;
+
+			@media (min-width: $sm-width) {
+				margin-bottom: 0;
+			}
+		}
+	}
+	
 }
 
 .images-section {
