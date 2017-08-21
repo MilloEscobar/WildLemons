@@ -8,7 +8,7 @@
 			$('#about li p').html(res.items[0].fields.descriptionEnglish1);
 		}
 		if (!rerender) {
-			$('#about li img').attr("src", "https:"+res.includes.Asset[0].fields.file.url);
+			$('#about li.img').html('<img src="'+res.includes.Asset[0].fields.file.url+'">');
 		}
 	}
 
