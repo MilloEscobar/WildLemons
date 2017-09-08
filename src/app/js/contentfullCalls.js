@@ -71,7 +71,25 @@
 	}
 
 	app.form = function () {
-		object = {
+		
+		
+		var = formAutoResponse = {
+		    url: "http://mail.openode.io/mail", 
+		    method: "POST",
+		    data: {	
+		    		"NAME": app.FORM_NAME.val(),
+		    		"email_address" : app.FORM_EMAIL.val()
+					},
+		    callback : app.formSuccess,
+		    errorCallback : app.formError,
+		    headers: {},
+		    dataType: "json"
+		}
+		app.ajax(formAutoMail);
+	}
+	
+	app.form2 = function () {
+		var formMail = {
 		    url: "https://formspree.io/"+app.EMAIL_SUBMIT_FORM, 
 		    method: "POST",
 		    data: {	
@@ -86,7 +104,7 @@
 		    headers: {},
 		    dataType: "json"
 		}
-		app.ajax(object);
+		app.ajax(formMail);
 	}
 
 }(window));
