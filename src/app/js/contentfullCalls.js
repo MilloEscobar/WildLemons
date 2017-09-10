@@ -74,7 +74,7 @@
 		
 		
 		var formAutoResponse = {
-		    url: "http://localhost:5000/mail", 
+		    url: "http://mail.openode.io/mail", 
 		    method: "POST",
 		    data: {	
 		    		"NAME": app.FORM_NAME.val(),
