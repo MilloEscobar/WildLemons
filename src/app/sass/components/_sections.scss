@@ -38,8 +38,7 @@
 
 .section {
 	min-height: 30rem;
-	padding-top:8rem;
-	padding-bottom:8rem;
+	padding: 8rem 5rem;
 	position: relative;
 	z-index:3;
 
@@ -94,7 +93,7 @@
 	}
 	.section {
 
-		margin-bottom: 8rem;
+		margin-bottom: 5rem;
 		
 	}
 }
@@ -105,7 +104,7 @@
 	    left: -50%;
 	    height: 15rem;
 	    position: absolute;
-	    top: 20px;
+	    top: 10px;
 	    width: 200%;
 	}
 	.section {
