@@ -41,15 +41,25 @@
 		
 		.navbar-brand {
 			float: left;
-			height: 3rem;
-			margin: 2rem 0;
+			height: 2.5rem;
+			margin: 2.25rem 0;
 			padding: 0 2px;
 			color: $main_gray;
 			font-family: $title_font_secondary;
+			font-weight: 700;
+			text-transform: uppercase;
+			
 
 			h1 {
-				font-size: 2rem;
+				font-weight: 700;
 			}
+			.nav-logo-name {
+			display: inline-block;
+			font-size: 1.6rem;
+			line-height: 2.5rem;
+			margin: 0;
+		}
+
 		}
 
 		.navbar-nav {
@@ -82,18 +92,12 @@
 
 		.nav-logo-img {
 			float: left;
-			margin-right: 1rem;
+			margin-right: 0.6rem;
 			max-height: 100%;
 			width: inherit;
 		}
 		
-		.nav-logo-name {
-			display: inline-block;
-			font-size: 1.5rem;
-			line-height: 3rem;
-			margin: 0;
-		}
-
+		
 		.nav {
 			@media (min-width: $sm-width) {
 				float: right;
@@ -145,8 +149,9 @@
 
 	h2 {
 		color: inherit;
-		font-weight: lighter;
-		font-family: $title_font_secondary;
+		font-family: $title_font_thin;
+		font-weight: 300;
+		
 	}
 }
 

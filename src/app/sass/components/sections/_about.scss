@@ -10,14 +10,10 @@
 	}
 	li {
 		vertical-align: middle;
-		
-		&:first-child {
-			margin-bottom: 7rem;
-
-			@media (min-width: $sm-width) {
-				margin-bottom: 0;
-			}
-		}
+		max-width: $sm-width;
+		margin: 0 auto;
+		float: none;
+		display: block;
 	}
 	
 }

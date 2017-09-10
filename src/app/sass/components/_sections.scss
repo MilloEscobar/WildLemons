@@ -147,6 +147,10 @@
 	opacity: $opacity_medium;
 }
 
+.opacity-high {
+	opacity: $opacity_high;
+}
+
 
 .opacity-yellow {
 	@extend %opacity-color;
