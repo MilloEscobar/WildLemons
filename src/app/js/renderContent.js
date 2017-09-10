@@ -111,6 +111,7 @@
 
 	app.formError = function (res) {
 		console.log('formError',res);
+		app.SPINNER.addClass('hidden');
 	}
 
 }(window));

@@ -73,8 +73,8 @@
 	app.form = function () {
 		
 		
-		var = formAutoResponse = {
-		    url: "http://mail.openode.io/mail", 
+		var formAutoResponse = {
+		    url: "http://localhost:5000/mail", 
 		    method: "POST",
 		    data: {	
 		    		"NAME": app.FORM_NAME.val(),
@@ -85,7 +85,7 @@
 		    headers: {},
 		    dataType: "json"
 		}
-		app.ajax(formAutoMail);
+		app.ajax(formAutoResponse);
 	}
 	
 	app.form2 = function () {
