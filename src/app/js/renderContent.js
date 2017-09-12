@@ -109,7 +109,12 @@
 		app.SPINNER.addClass('hidden');
 	}
 
-	app.formError = function (res) {
+	app.formError1 = function (res) {
+		console.log('formError',res);
+		app.form2();
+	}
+
+	app.formError2 = function (res) {
 		console.log('formError',res);
 		app.SPINNER.addClass('hidden');
 	}

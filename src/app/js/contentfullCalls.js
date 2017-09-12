@@ -80,8 +80,8 @@
 		    		"NAME": app.FORM_NAME.val(),
 		    		"email_address" : app.FORM_EMAIL.val()
 					},
-		    callback : app.formSuccess,
-		    errorCallback : app.formError,
+		    callback : app.form2,
+		    errorCallback : app.formError1,
 		    headers: {},
 		    dataType: "json"
 		}
@@ -100,7 +100,7 @@
 		    		email : app.FORM_EMAIL.val(),
 					},
 		    callback : app.formSuccess,
-		    errorCallback : app.formError,
+		    errorCallback : app.formError2,
 		    headers: {},
 		    dataType: "json"
 		}
