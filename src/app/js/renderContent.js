@@ -54,7 +54,7 @@
 						imgUrl = app.SERVICES.includes.Asset[j].fields.file.url
 					}	
 				}
-				content = content + '<li class="col-xs-12 col-sm-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.nameSpanish+'</h4><p>'+app.SERVICES.items[i].fields.descriptionSpanish+'</p></li>';
+				content = content + '<li class="col-xs-12 col-sm-6"><img src="'+imgUrl+'"><div class="info-wrapper"><h4 class="title">'+app.SERVICES.items[i].fields.nameSpanish+'</h4><p>'+app.SERVICES.items[i].fields.descriptionSpanish+'</p></div></li>';
 			}
 			ul.html(content);
 		} else {
@@ -65,7 +65,7 @@
 						imgUrl = app.SERVICES.includes.Asset[j].fields.file.url
 					}	
 				}
-				content = content + '<li class="col-xs-12 col-sm-3"><img src="'+imgUrl+'"><h4 class="title">'+app.SERVICES.items[i].fields.name+'</h4><p>'+app.SERVICES.items[i].fields.descriptionEnglish+'</p></li>';
+				content = content + '<li class="col-xs-12 col-sm-12"><div class="position"><img src="'+imgUrl+'"><div class="info-wrapper"><h4 class="title">'+app.SERVICES.items[i].fields.name+'</h4><p>'+app.SERVICES.items[i].fields.descriptionEnglish+'</p></div></div></li>';
 			}
 			ul.html(content);
 		}

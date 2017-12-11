@@ -1,4 +1,7 @@
 # WildLemons
-Compile sass
+npm install
+
+
+gulp serve
 
 
