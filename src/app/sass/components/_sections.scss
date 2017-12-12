@@ -20,6 +20,11 @@
 		background-color: $dark_gray;
 		color: $main_gray;
 	}
+	&.image {
+		.title {
+			color: $main_yellow;
+		}
+	}
 }
 
 .rotate-bacground-right,
