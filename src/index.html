@@ -87,15 +87,16 @@
   </div>
 </section>
 
-<section class="container-fluid dark image">
+<section class="container-fluid dark process image">
+  <div class="opacity-high opacity-dark"></div>
   <div id="process" class="container section">
     <h2 class="title">Our process</h2>
 
     <ul class="inline-list row">
-      <li><h3>Process 1</h3></li>
-      <li><h3>Process 1</h3></li>
-      <li><h3>Process 1</h3></li>
-      <li><h3>Process 1</h3></li>
+      <li class="col-xs-6 col-sm-3"><h3>Meet and agree</h3></li>
+      <li class="col-xs-6 col-sm-3"><h3>Idea and concept</h3></li>
+      <li class="col-xs-6 col-sm-3"><h3>Design and create</h3></li>
+      <li class="col-xs-6 col-sm-3"><h3>Build and develop</h3></li>
     </ul>
   </div>
 </section>
@@ -139,28 +140,26 @@
 </section>
 
 <section id="contact" class="contact container-fluid dark image">
+  <div class="opacity-high opacity-dark"></div>
    <div  class="container section">
     <h2 class="title">Contact</h2>
     <div class="row">
       <div class="col-xs-12 col-sm-6" id="form">
         <form onsubmit="return false">
           <div class="form-group">
-            <label for="formName">Your name</label>
-            <input class="form-control input-required" id="formName" type="text" name="name" placeholder="Example: Chuck Norris" required>
+            <input class="form-control input-required" id="formName" type="text" name="name" placeholder="Your name" required>
             <span class="error-message-field empty-field hidden">Hey! Seems like you missed this field</span>
           </div>
           <div class="form-group">
-            <label for="formEmail">Your email address</label>
-            <input class="form-control input-required" id="formEmail" type="email" name="_replyto" placeholder="Example: norrischuck@example.com" required>
+            <input class="form-control input-required" id="formEmail" type="email" name="_replyto" placeholder="Your email address" required>
             <span class="error-message-field empty-field hidden">Hey! Seems like you missed this field</span>
             <span class="error-message-field email-field hidden">Hey! Please double check the email format</span>
           </div>
           <div class="form-group">
-            <label for="formMessage">Your message</label>
-            <textarea class="form-control" id="formMessage" name="message" placeholder="Example: This is a Chuck Norris message" ></textarea>
+            <textarea class="form-control" id="formMessage" name="message" placeholder="Your message" ></textarea>
           </div>
           <input id="gotcha" type="text" name="_gotcha" style="display:none"/>
-          <button id="sendEmail" type="submit" class="btn btn-gray">Send</button>
+          <button id="sendEmail" type="submit" class="btn btn-white">Send</button>
         </form>
       </div>
       <div class="col-xs-12 col-sm-6">
